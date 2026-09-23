@@ -66,7 +66,7 @@ List only the plugins that project needs.
 1. Put the plugin in its own repo, with `.claude-plugin/plugin.json` at the root.
 2. Add an entry to `plugins` in `.claude-plugin/marketplace.json`:
    ```json
-   { "name": "<plugin>", "source": { "source": "github", "repo": "VikramSBizzFly/<repo>" }, "description": "..." }
+   { "name": "<plugin>", "source": { "source": "url", "url": "https://github.com/VikramSBizzFly/<repo>.git" }, "description": "..." }
    ```
 3. Add a row to the table at the top of this README.
 4. Run `claude plugin validate .` and push.

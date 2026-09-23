@@ -8,16 +8,16 @@
     {
       "name": "testwright",
       "source": {
-        "source": "github",
-        "repo": "VikramSBizzFly/testwright"
+        "source": "url",
+        "url": "https://github.com/VikramSBizzFly/testwright.git"
       },
       "description": "testwright - Claude-native QA: discovers routes, writes test cases into an Excel workbook, and runs them via curl and the Playwright MCP."
     },
     {
       "name": "bizzfly-rules",
       "source": {
-        "source": "github",
-        "repo": "VikramSBizzFly/bizzfly-rules"
+        "source": "url",
+        "url": "https://github.com/VikramSBizzFly/bizzfly-rules.git"
       },
       "description": "BizzFly team rules: injects the global rules at session start and blocks tool calls outside the launch directory."
     }
