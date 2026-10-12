@@ -6,6 +6,7 @@ The single Claude Code plugin marketplace for BizzFly. This repo holds only the 
 |---|---|---|
 | `testwright` | [VikramSBizzFly/testwright](https://github.com/VikramSBizzFly/testwright) | Claude-native QA: maps routes, writes test cases into an Excel workbook, runs them via curl and the Playwright MCP. |
 | `bizzfly-rules` | [VikramSBizzFly/bizzfly-rules](https://github.com/VikramSBizzFly/bizzfly-rules) | Team rules in every session, plus a guard that blocks tool calls outside the launch directory. |
+| `feature-announcer` | [VikramSBizzFly/feature-announcer](https://github.com/VikramSBizzFly/feature-announcer) | Announces shipped features to your app's users: writes a plain "What's new" note and posts it to your announcements endpoint. Needs `.claude/announcer.json` in the project. |
 
 ## Install
 
@@ -13,6 +14,7 @@ The single Claude Code plugin marketplace for BizzFly. This repo holds only the 
 /plugin marketplace add VikramSBizzFly/bizzfly-marketplace
 /plugin install testwright@BizzFly
 /plugin install bizzfly-rules@BizzFly
+/plugin install feature-announcer@BizzFly
 ```
 
 Restart Claude Code. If you installed bizzfly-rules, run `/bizzfly-rules:apply` in each project; it sets up `.claude/tmp/`, `.claude/memory/` and `.gitignore` for the rules. bizzfly-rules needs Node.js on `PATH` (check with `node --version`).
@@ -38,6 +40,7 @@ Each plugin updates on its own:
 |---|---|
 | `bizzfly-rules` | `/bizzfly-rules:update` |
 | `testwright` | `/plugin marketplace update BizzFly`, then `/plugin update testwright@BizzFly` |
+| `feature-announcer` | `/plugin marketplace update BizzFly`, then `/plugin update feature-announcer@BizzFly` |
 
 `/bizzfly-rules:update` refreshes the catalog and updates bizzfly-rules only. It doesn't touch testwright or any other plugin. Refreshing the catalog alone (`/plugin marketplace update BizzFly`) doesn't install anything new.
 

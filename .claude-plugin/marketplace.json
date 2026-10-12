@@ -20,6 +20,14 @@
         "url": "https://github.com/VikramSBizzFly/bizzfly-rules.git"
       },
       "description": "BizzFly team rules: injects the global rules at session start and blocks tool calls outside the launch directory."
+    },
+    {
+      "name": "feature-announcer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/VikramSBizzFly/feature-announcer.git"
+      },
+      "description": "feature-announcer - notices shipped features, writes a plain \"What's new\" note with Claude and posts it to your app's announcements endpoint."
     }
   ]
 }
